@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A029642B1B0CCFBA00972517 /* Wren.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A029642A1B0CCFBA00972517 /* Wren.h */; };
+		A029642D1B0CCFBA00972517 /* Wren.m in Sources */ = {isa = PBXBuildFile; fileRef = A029642C1B0CCFBA00972517 /* Wren.m */; };
+		A02964331B0CCFBA00972517 /* libWren.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A02964271B0CCFBA00972517 /* libWren.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A02964341B0CCFBA00972517 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A029641F1B0CCFBA00972517 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A02964261B0CCFBA00972517;
+			remoteInfo = Wren;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A02964251B0CCFBA00972517 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				A029642B1B0CCFBA00972517 /* Wren.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A02964271B0CCFBA00972517 /* libWren.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWren.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A029642A1B0CCFBA00972517 /* Wren.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wren.h; sourceTree = "<group>"; };
+		A029642C1B0CCFBA00972517 /* Wren.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wren.m; sourceTree = "<group>"; };
+		A02964321B0CCFBA00972517 /* WrenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02964381B0CCFBA00972517 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A02964241B0CCFBA00972517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029642F1B0CCFBA00972517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02964331B0CCFBA00972517 /* libWren.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A029641E1B0CCFBA00972517 = {
+			isa = PBXGroup;
+			children = (
+				A02964291B0CCFBA00972517 /* Wren */,
+				A02964361B0CCFBA00972517 /* WrenTests */,
+				A02964281B0CCFBA00972517 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A02964281B0CCFBA00972517 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A02964271B0CCFBA00972517 /* libWren.a */,
+				A02964321B0CCFBA00972517 /* WrenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A02964291B0CCFBA00972517 /* Wren */ = {
+			isa = PBXGroup;
+			children = (
+				A029642A1B0CCFBA00972517 /* Wren.h */,
+				A029642C1B0CCFBA00972517 /* Wren.m */,
+			);
+			path = Wren;
+			sourceTree = "<group>";
+		};
+		A02964361B0CCFBA00972517 /* WrenTests */ = {
+			isa = PBXGroup;
+			children = (
+				A02964371B0CCFBA00972517 /* Supporting Files */,
+			);
+			path = WrenTests;
+			sourceTree = "<group>";
+		};
+		A02964371B0CCFBA00972517 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A02964381B0CCFBA00972517 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A02964261B0CCFBA00972517 /* Wren */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A029643B1B0CCFBA00972517 /* Build configuration list for PBXNativeTarget "Wren" */;
+			buildPhases = (
+				A02964231B0CCFBA00972517 /* Sources */,
+				A02964241B0CCFBA00972517 /* Frameworks */,
+				A02964251B0CCFBA00972517 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wren;
+			productName = Wren;
+			productReference = A02964271B0CCFBA00972517 /* libWren.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A02964311B0CCFBA00972517 /* WrenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A029643E1B0CCFBA00972517 /* Build configuration list for PBXNativeTarget "WrenTests" */;
+			buildPhases = (
+				A029642E1B0CCFBA00972517 /* Sources */,
+				A029642F1B0CCFBA00972517 /* Frameworks */,
+				A02964301B0CCFBA00972517 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A02964351B0CCFBA00972517 /* PBXTargetDependency */,
+			);
+			name = WrenTests;
+			productName = WrenTests;
+			productReference = A02964321B0CCFBA00972517 /* WrenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A029641F1B0CCFBA00972517 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Lucas Pereira";
+				TargetAttributes = {
+					A02964261B0CCFBA00972517 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					A02964311B0CCFBA00972517 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A02964221B0CCFBA00972517 /* Build configuration list for PBXProject "Wren" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A029641E1B0CCFBA00972517;
+			productRefGroup = A02964281B0CCFBA00972517 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A02964261B0CCFBA00972517 /* Wren */,
+				A02964311B0CCFBA00972517 /* WrenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A02964301B0CCFBA00972517 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A02964231B0CCFBA00972517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A029642D1B0CCFBA00972517 /* Wren.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A029642E1B0CCFBA00972517 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A02964351B0CCFBA00972517 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A02964261B0CCFBA00972517 /* Wren */;
+			targetProxy = A02964341B0CCFBA00972517 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A02964391B0CCFBA00972517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A029643A1B0CCFBA00972517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A029643C1B0CCFBA00972517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A029643D1B0CCFBA00972517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A029643F1B0CCFBA00972517 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WrenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A02964401B0CCFBA00972517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WrenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A02964221B0CCFBA00972517 /* Build configuration list for PBXProject "Wren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A02964391B0CCFBA00972517 /* Debug */,
+				A029643A1B0CCFBA00972517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A029643B1B0CCFBA00972517 /* Build configuration list for PBXNativeTarget "Wren" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A029643C1B0CCFBA00972517 /* Debug */,
+				A029643D1B0CCFBA00972517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A029643E1B0CCFBA00972517 /* Build configuration list for PBXNativeTarget "WrenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A029643F1B0CCFBA00972517 /* Debug */,
+				A02964401B0CCFBA00972517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A029641F1B0CCFBA00972517 /* Project object */;
+}

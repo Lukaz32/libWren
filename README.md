@@ -1,9 +1,9 @@
 # README #
 
-The Wren class is a very straightforward singleton.
-You simply set its *AuthToken*
-start the services of GeoPushNotifications and/or Beacons
-implement the methods in the AppDelegate as described:
+* The Wren class is a very straightforward singleton.
+* You simply set its *AuthToken*
+* Start the services of GeoPushNotifications and/or Beacons
+* Implement the methods in the AppDelegate as described:
 
 
 ```

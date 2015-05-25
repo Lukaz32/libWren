@@ -1,8 +1,27 @@
 # README #
 
 The Wren class is a very straightforward singleton.
-You simply set its *AuthToken*, and start the services of Geolocation and/or Beacons.
-That's it.
+You simply set its *AuthToken*
+start the services of GeoPushNotifications and/or Beacons
+implement the methods in the AppDelegate as described:
+
+
+```
+#!objective-c
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    [[Wren sharedInstance]didAllowPushNotifications:NO withToken:nil];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [[Wren sharedInstance]didAllowPushNotifications:YES withToken:deviceToken];
+}
+
+-(void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    [application registerForRemoteNotifications];
+}
+```
+
 
 ### What is this repository for? ###
 

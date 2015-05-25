@@ -1,10 +1,12 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+The Wren class is a very straightforward singleton.
+You simply set its *AuthToken*, and start the services of Geolocation and/or Beacons.
+That's it.
 
 ### What is this repository for? ###
 
-* This is a simple library for integrating with WrenSys Api
+* This is a simple objC library for integrating with WrenSys Api
 
 ### Setup ###
 

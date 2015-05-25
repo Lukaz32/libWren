@@ -36,3 +36,7 @@ This library requires two other libraries for properly working:
 I recommend using the CocoaPod spec:
 pod "AFNetworking", "~> 2.0"
 pod "iAppInfos"
+
+### Generating the .Framework file ###
+
+For building the framework you simple have to clone and build the project. It already has a building script that will generate the .framework file and save it to your **Desktop**

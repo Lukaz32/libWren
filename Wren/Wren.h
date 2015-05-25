@@ -7,7 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@protocol WrenDelegate <NSObject>
+
+//
+
+@end
 
 @interface Wren : NSObject
+
+@property (unsafe_unretained) id<WrenDelegate> delegate;
+
++ (instancetype)sharedInstance;
+- (void)setAuthToken:(NSString *)token;
+- (void)startGeoPushService;
+- (void)startBeaconsService;
+- (void)requestDefaultNotificationPermission;
+- (void)didAllowPushNotifications:(BOOL)allowed withToken:(NSData *)pushToken;
 
 @end

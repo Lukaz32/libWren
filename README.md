@@ -34,8 +34,10 @@ This library requires two other libraries for properly working:
 * iAppInfos
 
 I recommend using the CocoaPod spec:
+```
 pod "AFNetworking", "~> 2.0"
 pod "iAppInfos"
+```
 
 ### Generating the .Framework file ###
 

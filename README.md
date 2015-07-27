@@ -30,8 +30,20 @@
 ### Setup ###
 
 This library requires two other libraries for properly working:
+
+```
+#!objective-c
+
 * AFNetworking
+```
+
+
+```
+#!objective-c
+
 * iAppInfos
+
+```
 
 I recommend using the CocoaPod spec:
 ```

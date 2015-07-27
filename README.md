@@ -9,6 +9,13 @@
 Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
 ```
 
+```
+#!objective-c
+[[Wren sharedInstance]setAuthToken:@"YOUR_AUTH_TOKEN"];
+
+```
+
+
 * Start the services of GeoPushNotifications and/or Beacons
 
 ```
@@ -17,6 +24,13 @@ Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
 Wren.sharedInstance().startGeoPushService()
 Wren.sharedInstance().startBeaconsService()
 ```
+
+```
+#!objective-c
+[[Wren sharedInstance]startBeaconsService];
+[[Wren sharedInstance]startGeoPushService];
+```
+
 
 * Implement the methods in the AppDelegate as described:
 

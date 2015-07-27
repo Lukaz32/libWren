@@ -2,7 +2,22 @@
 
 * The Wren class is a very straightforward singleton.
 * You simply set its *AuthToken*
+
+```
+#!objective-c
+
+Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
+```
+
 * Start the services of GeoPushNotifications and/or Beacons
+
+```
+#!objective-c
+
+Wren.sharedInstance().startGeoPushService()
+Wren.sharedInstance().startBeaconsService()
+```
+
 * Implement the methods in the AppDelegate as described:
 
 

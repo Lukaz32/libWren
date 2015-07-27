@@ -4,7 +4,7 @@
 * You simply set its *AuthToken*
 
 ```
-#!objective-c
+#!swift
 
 Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
 ```
@@ -12,7 +12,7 @@ Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
 * Start the services of GeoPushNotifications and/or Beacons
 
 ```
-#!objective-c
+#!swift
 
 Wren.sharedInstance().startGeoPushService()
 Wren.sharedInstance().startBeaconsService()
@@ -36,6 +36,24 @@ Wren.sharedInstance().startBeaconsService()
     [application registerForRemoteNotifications];
 }
 ```
+
+
+```
+#!swift
+
+func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        Wren.sharedInstance().didAllowPushNotifications(false, withToken: nil)
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        Wren.sharedInstance().didAllowPushNotifications(true, withToken: deviceToken)
+    }
+    
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        application.registerForRemoteNotifications()
+    }
+```
+
 
 
 ### What is this repository for? ###

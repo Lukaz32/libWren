@@ -2,10 +2,39 @@
 
 * The Wren class is a very straightforward singleton.
 * You simply set its *AuthToken*
+
+```
+#!swift
+
+Wren.sharedInstance().setAuthToken("YOUR_AUTH_TOKEN")
+```
+
+```
+#!objective-c
+[[Wren sharedInstance]setAuthToken:@"YOUR_AUTH_TOKEN"];
+
+```
+
+
 * Start the services of GeoPushNotifications and/or Beacons
+
+```
+#!swift
+
+Wren.sharedInstance().startGeoPushService()
+Wren.sharedInstance().startBeaconsService()
+```
+
+```
+#!objective-c
+[[Wren sharedInstance]startBeaconsService];
+[[Wren sharedInstance]startGeoPushService];
+```
+
+
 * Implement the methods in the AppDelegate as described:
 
-
+**Objective C**
 ```
 #!objective-c
 
@@ -22,6 +51,24 @@
 }
 ```
 
+**Swift**
+```
+#!swift
+
+func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        Wren.sharedInstance().didAllowPushNotifications(false, withToken: nil)
+    }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        Wren.sharedInstance().didAllowPushNotifications(true, withToken: deviceToken)
+    }
+    
+    func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+        application.registerForRemoteNotifications()
+    }
+```
+
+
 
 ### What is this repository for? ###
 
@@ -30,12 +77,19 @@
 ### Setup ###
 
 This library requires two other libraries for properly working:
+
+```
+#!objective-c
+
 * AFNetworking
 * iAppInfos
+```
 
 I recommend using the CocoaPod spec:
+```
 pod "AFNetworking", "~> 2.0"
 pod "iAppInfos"
+```
 
 ### Generating the .Framework file ###
 

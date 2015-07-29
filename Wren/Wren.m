@@ -66,22 +66,24 @@ NSString static *kCURRENTLY_MONITORED_BEACONS = @"kcurrentlymonitoredbeacons";
  */
 - (void)startGeoPushService
 {
-    [self deviceIsRegistered:^(BOOL isRegistered) {
-        if (isRegistered)
-        {
-            [self requestNotificationPermissionRequestWithCompletion:^(BOOL success) {
-                if (success)
-                {
-                    [self requestLocationPermissionWithCompletion:^(BOOL success) {
-                        if (success)
-                        {
-                            [self.locationManager startMonitoringSignificantLocationChanges];
-                        }
-                    }];
-                }
-            }];
-        }
-    }];
+    if (self.token) {
+        [self deviceIsRegistered:^(BOOL isRegistered) {
+            if (isRegistered)
+            {
+                [self requestNotificationPermissionRequestWithCompletion:^(BOOL success) {
+                    if (success)
+                    {
+                        [self requestLocationPermissionWithCompletion:^(BOOL success) {
+                            if (success)
+                            {
+                                [self.locationManager startMonitoringSignificantLocationChanges];
+                            }
+                        }];
+                    }
+                }];
+            }
+        }];
+    }
 }
 
 /**
@@ -95,19 +97,21 @@ NSString static *kCURRENTLY_MONITORED_BEACONS = @"kcurrentlymonitoredbeacons";
  */
 - (void)startBeaconsService
 {
-    [self deviceIsRegistered:^(BOOL isRegistered) {
-        if (isRegistered) {
-            [self requestLocationPermissionWithCompletion:^(BOOL success) {
-                if (success) {
-                    [[WSManager sharedManagerWithAuthToken:self.token]getAllBeaconsToBeMonitoredWithCompletionBlock:^(NSArray *beacons, NSError *error) {
-                        if (!error && beacons) {
-                            [self startMonitoringForBeacons:beacons];
-                        }
-                    }];
-                }
-            }];
-        }
-    }];
+    if (self.token) {
+        [self deviceIsRegistered:^(BOOL isRegistered) {
+            if (isRegistered) {
+                [self requestLocationPermissionWithCompletion:^(BOOL success) {
+                    if (success) {
+                        [[WSManager sharedManagerWithAuthToken:self.token]getAllBeaconsToBeMonitoredWithCompletionBlock:^(NSArray *beacons, NSError *error) {
+                            if (!error && beacons) {
+                                [self startMonitoringForBeacons:beacons];
+                            }
+                        }];
+                    }
+                }];
+            }
+        }];
+    }
 }
 
 - (void)requestDefaultNotificationPermission
@@ -120,7 +124,7 @@ NSString static *kCURRENTLY_MONITORED_BEACONS = @"kcurrentlymonitoredbeacons";
 {
     NSLog(@"[WREN] didAllowPushNotificationsWithToken: %@",pushToken);
     
-    if (allowed && pushToken) {
+    if (allowed && pushToken && self.token) {
         [[WSManager sharedManagerWithAuthToken:self.token]enablePushNotificationsWithToken:pushToken andCompletionBlock:^(NSError *error)
          {
              if (!error)

@@ -31,6 +31,12 @@ Wren.sharedInstance().startBeaconsService()
 [[Wren sharedInstance]startGeoPushService];
 ```
 
+* Add the Plist flag
+
+```
+#!swift
+NSLocationAlwaysUsageDescription
+```
 
 * Implement the methods in the AppDelegate as described:
 
